@@ -4,39 +4,63 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pavonine Rare Feather Atelier</title>
-    <link rel="stylesheet" href="styles.css">
+    <style>
+        body { font-family: Arial, sans-serif; margin: 0; padding: 0; }
+        header { background: #f5f5f5; padding: 20px; text-align: center; }
+        nav { margin: 20px 0; }
+        nav a { margin: 0 15px; text-decoration: none; color: #333; }
+        .hero { background-image: url('hero.jpg'); height: 400px; background-size: cover; color: white; display: flex; align-items: center; justify-content: center; }
+        .collections { padding: 20px; display: flex; flex-wrap: wrap; justify-content: space-around; }
+        .collection-item { border: 1px solid #ddd; margin: 10px; padding: 10px; width: 30%; }
+        footer { text-align: center; padding: 20px; background: #f5f5f5; }
+    </style>
 </head>
 <body>
     <header>
-        <h1>Welcome to the Pavonine Rare Feather Atelier</h1>
+        <h1>Pavonine Rare Feather Atelier</h1>
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#collections">Collections</a>
+            <a href="#testimonials">Testimonials</a>
+            <a href="#contact">Contact</a>
+        </nav>
     </header>
-    <nav>
-        <ul>
-            <li><a href="#about">About</a></li>
-            <li><a href="#products">Products</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
-    </nav>
-    <main>
-        <section id="about">
-            <h2>About Us</h2>
-            <p>Here at Pavonine Rare Feather Atelier, we specialize in unique feather accessories...</p>
-        </section>
-        <section id="products">
-            <h2>Our Products</h2>
-            <ul>
-                <li>Feather Hat</li>
-                <li>Feather Earrings</li>
-                <li>Feather Scarves</li>
-            </ul>
-        </section>
-        <section id="contact">
-            <h2>Contact Us</h2>
-            <p>Email us at <a href="mailto:info@pavonineatelier.com">info@pavonineatelier.com</a></p>
-        </section>
-    </main>
+
+    <div class="hero">
+        <h2>Welcome to Your Luxurious Atelier</h2>
+    </div>
+
+    <div class="collections" id="collections">
+        <h2>Our Collections</h2>
+        <div class="collection-item">
+            <h3>Feather Collection 1</h3>
+            <p>Details about feather collection 1.</p>
+        </div>
+        <div class="collection-item">
+            <h3>Feather Collection 2</h3>
+            <p>Details about feather collection 2.</p>
+        </div>
+        <div class="collection-item">
+            <h3>Feather Collection 3</h3>
+            <p>Details about feather collection 3.</p>
+        </div>
+    </div>
+
+    <div class="testimonials" id="testimonials">
+        <h2>What Our Clients Say</h2>
+        <p>"This atelier is a dream come true!" - Client A</p>
+        <p>"The quality is unmatched!" - Client B</p>
+    </div>
+
     <footer>
-        <p>&copy; 2026 Pavonine Rare Feather Atelier. All rights reserved.</p>
+        <p>&copy; 2026 Pavonine Rare Feather Atelier</p>
     </footer>
+
+    <script>
+        // Functionality for Payment Modal
+        function openPaymentModal() {
+            alert('Payment Modal Opened');
+        }
+    </script>
 </body>
 </html>
